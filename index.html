@@ -1,0 +1,92 @@
+<!--
+Copyright (c) 2025 The Aridity Team, all rights reserved.
+Licensed under the BSD 3-Clause License
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Cereon</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="fixed top-0 left-0 w-full h-full flex flex-col gap-10 bg-white dark:bg-gray-700 text-black dark:text-white overflow-auto">
+        <nav class="w-full bg-emerald-600 text-white shadow p-2">
+            <div class="max-w-6xl mx-auto px-4">
+                <ul class="flex items-center justify-center h-10 space-x-4">
+                    <li>
+                        <a href="/"
+                        class="block px-3 py-2 rounded-md bg-blue-500 hover:bg-blue-600 transition-colors"
+                        >Home</a>
+                    </li>
+                    <li>
+                        <a href="/downloads"
+                        class="block px-3 py-2 rounded-md hover:bg-blue-600 transition-colors"
+                        >Downloads</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="w-full h-full p-2 flex flex-col flex-nowrap text-center" id="main-content">
+            <h1 class="text-6xl">Welcome to <span class="text-orange-500">Cereon</span>.</h1>
+            <p class="mt-2">...some placeholder logo and cool lookin background here...</p>
+            
+            <div class="flex flex-col gap-6 mt-12">
+                <section class="flex flex-col justify-center items-center text-center p-2" id="about">
+                    <h2 class="text-4xl font-semibold">
+                        A simple, and lightweight <span class="text-violet-800 dark:text-violet-700">.NET</span> IDE
+                    </h2>
+                    <p class="mt-3 max-w-prose text-lg text-gray-500 dark:text-gray-400">
+                        Cereon is an Windows-only IDE that aims to recreate most basic IDE features that everybody mostly uses on Visual Studio.
+                        Powered by the .NET Framework 4.8 runtime, it delivers a lightweight,
+                        extensible, and high-performance development experience.
+                    </p>
+                </section>
+
+                <section class="flex flex-col justify-center items-center text-center p-2" id="foundation">
+                    <h2 class="text-4xl font-semibold">
+                        Built with 
+                        <span class="text-orange-700">Mi</span><span class="text-blue-400">cro</span><span class="text-green-600">so</span><span class="text-yellow-500">ft</span>
+                        <span class="text-violet-700 dark:text-violet-700">Visual Studio</span>'s Tools
+                    </h2>
+                    <p class="mt-3 max-w-prose text-lg text-gray-500 dark:text-gray-400">
+                        Cereon is built on the same core technologies used in Microsoft Visual Studio,
+                        ensuring full compatibility with existing .NET projects.
+                    </p>
+                </section>
+
+                <section class="flex flex-col justify-center items-center text-center p-2" id="why-bother">
+                    <h2 class="text-4xl font-semibold">
+                        Why even bother?    
+                    </h2>
+                    <p class="mt-3 max-w-prose text-lg text-gray-500 dark:text-gray-400">
+                        Because of the fact that Microsoft wants to integrate more AI features into their applications
+                        including regular Notepad, File Explorer, and obviously even Visual Studio + the fact that the
+                        new Visual Studio may likely use more performance on default settings. Cereon was made to try and 
+                        make an lightweight IDE that doesn't ridiculously take up more performance usage on some important cases.
+                    </p>
+                </section>
+            </div>
+        </main>
+        <footer class="bg-slate-200 dark:bg-slate-800 text-black dark:text-white rounded-lg p-2">
+            <div class="w-full flex flex-col justify-center items-center text-center">
+                <p class="max-w-prose text-gray-500 dark:text-gray-400 text-center">
+                    An
+                    <img alt="Aridity Logo" src="assets/aridity_logo.png" 
+                    class="inline w-16 h-13 align-middle" />
+                    project.
+                </p>
+                <p class="max-w-prose text-xs text-gray-500 dark:text-gray-400 text-center">
+                    Copyright &copy; 2025 The Aridity Team, all rights reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
