@@ -21,13 +21,13 @@ Licensed under the BSD 3-Clause License
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="fixed top-0 left-0 w-full h-full flex flex-col gap-10 bg-white dark:bg-gray-700 text-black dark:text-white overflow-auto">
+    <div class="min-h-screen flex flex-col gap-10 bg-white dark:bg-gray-700 text-black dark:text-white overflow-auto">
         <nav class="w-full bg-emerald-600 text-white shadow p-2">
             <div class="max-w-6xl mx-auto px-4">
                 <ul class="flex items-center justify-center h-10 space-x-4">
                     <li>
                         <a href="."
-                        class="block px-3 py-2 rounded-md bg-blue-500 hover:bg-blue-600 transition-colors"
+                        class="block px-3 py-2 rounded-md hover:bg-blue-600 transition-colors"
                         >Home</a>
                     </li>
                     <li>
@@ -39,7 +39,7 @@ Licensed under the BSD 3-Clause License
             </div>
         </nav>
 
-        <main class="w-full h-full p-2 flex flex-col flex-nowrap text-center" id="main-content">
+        <main class="w-full h-full p-2 flex flex-col flex-grow flex-nowrap text-center" id="main-content">
             <h1 class="text-6xl">Welcome to <span class="text-orange-500">Cereon</span>.</h1>
             <p class="mt-2">...some placeholder logo and cool lookin background here...</p>
             
@@ -73,9 +73,21 @@ Licensed under the BSD 3-Clause License
                     </h2>
                     <p class="mt-3 max-w-prose text-lg text-gray-500 dark:text-gray-400">
                         Because of the fact that Microsoft wants to integrate more AI features into their applications
-                        including regular Notepad, File Explorer, and obviously even Visual Studio + the fact that the
-                        new Visual Studio may likely use more performance on default settings. Cereon was made to try and 
-                        make an lightweight IDE that doesn't ridiculously take up more performance usage on some important cases.
+                        including regular Notepad, and obviously even Visual Studio + the fact that the new Visual Studio
+                        may likely use more performance on default settings. Cereon was made to try and make an lightweight
+                        IDE that doesn't ridiculously take up more performance usage on some important cases.
+                    </p>
+                </section>
+
+                <section class="flex flex-col justify-center items-center text-center p-2" id="downloads">
+                    <h2 class="text-4xl font-semibold">
+                        Our <span class="text-orange-500">downloads</span>
+                    </h2>
+                    <p class="mt-3 max-w-prose text-lg text-gray-500 dark:text-gray-400">
+                        We are still working on the Cereon project, however we are planning to do a public beta release soon.
+                        We're also open for more suggestions on what useful features to add into Cereon, you can join our
+                        <a class="text-blue-400 hover:underline hover:cursor-pointer" target="_blank" href="https://discord.gg/69HWzqVBDE">Discord server</a>
+                        to request a new feature, or at least see our newest development logs, and showcases!
                     </p>
                 </section>
             </div>
@@ -88,11 +100,16 @@ Licensed under the BSD 3-Clause License
                     class="inline w-16 h-13 align-middle" />
                     project.
                 </p>
-                <p class="max-w-prose text-xs text-gray-500 dark:text-gray-400 text-center">
+                <div class="flex gap-4 text-sm mt-2">
+                    <a href="https://github.com/AridityTeam" class="hover:underline">GitHub</a>
+                </div>
+                <p class="max-w-prose text-xs text-gray-500 dark:text-gray-400 text-center mt-2">
                     Copyright &copy; 2025 The Aridity Team, all rights reserved.
                 </p>
             </div>
         </footer>
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
